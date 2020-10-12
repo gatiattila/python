@@ -1,3 +1,20 @@
+#0. Hobby shopp.
+#To be able to sell the latest article that was added to the shop
+#To be able to sell any item that is in the shop
+#To restock the shop with new items
+article = 'scarf','gloves','trousers','shirt'
+size = 'S','M','L','XL','XXL'
+hobby_shop = [(x,y,z) for x in range(1,21) for y in article for z in size]
+print(hobby_shop)
+hobby_shop.pop()
+if (1,'scarf','S') in hobby_shop:
+    hobby_shop.remove((1,'scarf','S'))
+
+print((len(hobby_shop)))
+new_elem = [1,'scarf','S']
+hobby_shop.insert((len(hobby_shop)),new_elem)
+print(len(hobby_shop))
+	
 #1. Write a python code to remove an element from a tuple.
 
 t = ("r","e","m","o","v","e","e","l","e","m","e","n","t")
